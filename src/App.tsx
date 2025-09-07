@@ -23,6 +23,7 @@ export default function App() {
       </header>
 
       {/* Main Content */}
+        <h1 className="text-center mt-6 text-4xl md:text-6xl font-bold leading-tight">Deply your React Projects</h1>
       <main className="flex-1 flex items-center justify-center px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-6xl items-center">
           {/* Left Side - Hero Content */}
