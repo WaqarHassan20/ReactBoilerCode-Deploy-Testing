@@ -2,7 +2,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden flex flex-col">
+    <> <div className="h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden flex flex-col">
       {/* Header */}
       <header className="px-6 py-3 flex items-center justify-between backdrop-blur-md bg-black/30 border-b border-blue-500/20 flex-shrink-0">
         <div className="flex items-center space-x-3">
@@ -152,5 +152,66 @@ export default function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+            {/* Tech Stack Icons */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 pt-16 max-w-4xl mx-auto">
+              <div className="text-center group">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">☁️</span>
+                </div>
+                <div className="text-sm text-gray-400">Cloudflare R2</div>
+              </div>
+              <div className="text-center group">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">🐳</span>
+                </div>
+                <div className="text-sm text-gray-400">Docker</div>
+              </div>
+              <div className="text-center group">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">☸️</span>
+                </div>
+                <div className="text-sm text-gray-400">Kubernetes</div>
+              </div>
+              <div className="text-center group">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">🌊</span>
+                </div>
+                <div className="text-sm text-gray-400">Digital Ocean</div>
+              </div>
+              <div className="text-center group">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-2xl">📮</span>
+                </div>
+                <div className="text-sm text-gray-400">Postman API</div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="max-w-7xl mx-auto px-6 py-12 text-center border-t border-blue-500/20 mt-24">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <span className="text-lg font-bold text-white">D</span>
+            </div>
+            <span className="text-lg font-semibold">DeployPro</span>
+          </div>
+          <div className="flex space-x-6">
+            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">API Docs</a>
+            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Status</a>
+            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Support</a>
+            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a>
+          </div>
+        </div>
+        <div className="mt-8 pt-8 border-t border-blue-500/20 text-gray-400">
+          <p>&copy; {new Date().getFullYear()} DeployPro. Enterprise deployment platform powered by Kubernetes, Docker, and Cloudflare R2.</p>
+        </div>
+      </footer>
+    </div>
+    </>
   );
 }
